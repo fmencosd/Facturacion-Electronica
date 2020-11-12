@@ -1,0 +1,45 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="App.master.vb" Inherits="La_Casa_del_Rincon_GuatemaltecoFinal.App" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Imprenta Alfa</title>
+    <link rel="stylesheet" href="../../Content/milligram.min.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container">
+  <div class="row">
+      <div class="column">
+        <a class="button" href="/app/inicio.aspx">Inicio</a>
+    </div>
+    
+    <div class="column">
+        <a class="button" href="/app/clientes.aspx">Clientes</a>
+    </div>
+   
+      <div class="column">
+          <a class="button" href="/app/productos.aspx">Productos</a>
+      </div>
+       <div class="column">
+          <a class="button" href="/app/solicitudes.aspx">Solicitudes</a>
+      </div>
+      
+  
+  </div>
+
+
+
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+            </div>
+    </form>
+</body>
+</html>
